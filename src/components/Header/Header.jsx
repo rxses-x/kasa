@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'; // Import NavLink
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.svg';
 
-function Header() {
+const Header = () => {
   return (
     <header className="header">
-      <div className="header__logo">
-      <img src={logo} alt="Kasa Logo" />
+      <div>
+        <img src={logo} alt="Kasa Logo" className="header__logo" />
       </div>
       <nav className="navigation">
         <NavLink to="/" className={({isActive}) => (isActive ? 'active' : '')}>

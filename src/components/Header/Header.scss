@@ -2,10 +2,10 @@
 .header {
   @include flex-display(
     $flex-direction: row,
-    $align-items: flex-start
+    $align-items: center
   );
-  
   &__logo {
+    color: red;
     img, svg {
       width: 100px; // Adjust the size
       height: 68px;
