@@ -1,8 +1,8 @@
 @use "sass:map";
-@import './App.scss';
-@import './utils/variables';
 @import './utils/mixins';
+@import './utils/variables';
 @import './utils/keyframes';
+@import './App.scss';
 
 
 @import '../components/Header/Header';
@@ -14,6 +14,7 @@
 @import '../components/Tags/Tags';
 @import '../components/Rate/Rate';
 
+@import '../pages/Home/Home';
 @import '../pages/About/About';
 @import '../pages/Error/Error';
 @import '../pages/Logement/Logement';

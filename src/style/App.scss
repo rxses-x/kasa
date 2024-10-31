@@ -13,6 +13,10 @@ body {
   margin: auto;
 }
 
+footer {
+  margin: 0;
+}
+
 h1, h2, p {
   margin: 0;
 }
@@ -29,5 +33,14 @@ img {
 .app {
   display: flex;
   flex-direction: column;
-  padding: 45px 100px 0;
+  @include mobile-responsive {
+    > *:not(.footer) {
+      padding: 0;
+    }
+  }
+
+  // Override padding only for non-footer elements
+  > *:not(.footer) {
+    padding: 45px 100px 0;
+  }
 }

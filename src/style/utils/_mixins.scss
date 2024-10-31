@@ -39,6 +39,12 @@
     color: $color;
 }
 
+@mixin mobile-responsive {
+    @media all and (max-width: map.get($kasa-variables, "mobile")) {
+        @content
+    }
+}
+
 @mixin tablet-responsive {
     @media screen and (min-width: map.get($kasa-variables, "tablet")) {
         @content
@@ -47,12 +53,6 @@
 
 @mixin laptop-responsive {
     @media screen and (min-width: map.get($kasa-variables, "laptop")) {
-        @content
-    }
-}
-
-@mixin desktop-responsive {
-    @media screen and (min-width: map.get($kasa-variables, "desktop")) {
         @content
     }
 }
