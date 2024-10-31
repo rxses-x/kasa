@@ -1,10 +1,20 @@
 /* Card */
 
 .card-grid {
+    // padding: 45px 100px 0;
     @include grid-display(
         $gap: 50px 60px,
         $column: 3
     );
+    @include mobile-responsive {
+        background: transparent;
+        @include grid-display(
+            $gap: 20px,
+            $column: 1
+        );
+        padding: 20px;
+        margin: 0;
+    }
     background: #F6F6F6;
     padding: 56px 60px 43px;
     margin: 43px 0 50px ;
@@ -24,12 +34,16 @@
         object-fit: cover;
     }
     &__title {
+        width: 100%;
         @include text-style(
             $font-size: 18px,
             $font-weight: 700,
             $line-height: 25.67px,
             $text-align: left,
         );
+        @include mobile-responsive {
+            white-space: wrap; /* Prevent text from wrapping */
+        }
         position: relative;
         left: 5%;
         bottom: 20%;

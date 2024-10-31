@@ -1,4 +1,4 @@
-function Card({ title, image, onClick }) {
+const Card = ({ title, image, onClick }) => {
   return (
       <div className="card" onClick={onClick} >
         <img src={image} alt={title} className='card__image'></img>
