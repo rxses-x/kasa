@@ -22,7 +22,7 @@ const collapseValue = [
     },
 ]
 
-function About() {
+const About = () => {
     return (
         <div>
             <Banner
@@ -32,6 +32,7 @@ function About() {
             <section className='about-content'>
                 {collapseValue.map( item => (
                     <Collapse
+                        key = { item.title }
                         title = { item.title }>
                         <p>{ item.text }</p>
                     </Collapse>

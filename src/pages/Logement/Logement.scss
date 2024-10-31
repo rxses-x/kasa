@@ -1,3 +1,7 @@
+.logement {
+    margin: 0;
+}
+
 .logement-content {
     padding-bottom: 20px;
     &__title {
@@ -22,9 +26,10 @@
 
 .logement-info {
     position: absolute;
+    left: -125px;
     top: 62%;
     @include flex-display(
-        // $width: 86%,
+        $align-items: flex-end,
         $gap: 15px
     );
     &__identity {

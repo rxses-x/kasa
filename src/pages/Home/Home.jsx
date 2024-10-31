@@ -5,7 +5,7 @@ import Card from '../../components/Card/Card';
 import rentalList from '../../data/logements.json'
 import homeBanner from '../../assets/home-background.png'
 
-function Home() {
+const Home = () => {
 
     const navigate = useNavigate()
     const handleClick = (id) => {

@@ -5,7 +5,7 @@ import Tags from '../../components/Tags/Tags'
 import Rate from '../../components/Rate/Rate'
 import Collapse from '../../components/Collapse/Collapse';
 
-function Logement() {
+const Logement = () => {
     const { id } = useParams();
     const rental = rentalList.find((i) => i.id === id)
     

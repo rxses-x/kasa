@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Tags({ tag }) {
+const Tags = ({ tag }) => {
     return (
         <div className="tags">
             {tag.map((t, index) => (

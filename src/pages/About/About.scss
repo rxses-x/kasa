@@ -1,9 +1,13 @@
 /* About */
 
+.about-banner {
+  margin-top: 38px;
+}
+
 .about-content {
   padding: 38px 108.5px;
   @include flex-display(
     $align-items: stretch,
-    $gap: 10px
+    $gap: 28px
   );
 }
