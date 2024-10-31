@@ -1,0 +1,19 @@
+@use "sass:map";
+@import './App.scss';
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/keyframes';
+
+
+@import '../components/Header/Header';
+@import '../components/Banner/Banner';
+@import '../components/Card/Card';
+@import '../components/Footer/Footer';
+@import '../components/Collapse/Collapse';
+@import '../components/Carrousel/Carrousel';
+@import '../components/Tags/Tags';
+@import '../components/Rate/Rate';
+
+@import '../pages/About/About';
+@import '../pages/Error/Error';
+@import '../pages/Logement/Logement';

@@ -1,0 +1,9 @@
+/* About */
+
+.about-content {
+  padding: 38px 108.5px;
+  @include flex-display(
+    $align-items: stretch,
+    $gap: 10px
+  );
+}

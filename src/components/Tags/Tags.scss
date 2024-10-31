@@ -1,0 +1,20 @@
+.tags {
+    @include flex-display(
+        $flex-direction: row,
+        $justify-content: flex-start,
+        $align-items: center,
+        $gap: 10px
+    );
+    flex-wrap: wrap;
+}
+
+.tag {
+    @include text-style(
+        $font-size: 14px,
+        $font-weight: 700,
+        $line-height: 19.96px
+    );
+    background: #FF6060;
+    border-radius: 10px;
+    padding: 3px 40px;
+}

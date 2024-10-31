@@ -1,0 +1,31 @@
+/* NotFound */
+
+.not-found {
+  @include flex-display();
+  h1 {
+    @include text-style(
+      $font-size: 288px,
+      $font-weight: 700,
+      $line-height: 410.69px,
+      $color: #FF6060
+    );
+  }
+  p {
+    margin: 139px;
+    @include text-style(
+      $font-size: 36px,
+      $font-weight: 500,
+      $line-height: 51.34px,
+      $color: #FF6060
+    );
+  }
+  &__link {
+    margin-bottom: 139px;
+    @include text-style(
+      $font-size: 18px,
+      $font-weight: 500,
+      $line-height: 25.67px,
+      $color: black,
+    );
+  }
+}

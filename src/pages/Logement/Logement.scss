@@ -1,0 +1,61 @@
+.logement-content {
+    padding-bottom: 20px;
+    &__title {
+        @include text-style(
+            $font-size: 36px,
+            $font-weight: 500,
+            $line-height: 51.34px,
+            $text-align: left,
+            $color: #FF6060
+        );
+    }
+    &__location {
+        @include text-style(
+            $font-size: 18px,
+            $font-weight: 500,
+            $line-height: 25.67px,
+            $text-align: left,
+            $color:#000000
+        );
+    }
+}
+
+.logement-info {
+    position: absolute;
+    top: 62%;
+    @include flex-display(
+        // $width: 86%,
+        $gap: 15px
+    );
+    &__identity {
+        @include flex-display(
+            $flex-direction: row,
+            $justify-content: flex-end,
+            $width: unset
+        );
+        &--name {
+            width: 100px;
+            padding-right: 10px;
+            @include text-style(
+                $font-size: 18px,
+                $font-weight: 500,
+                $line-height: 25.67px,
+                $text-align: right,
+                $color: #FF6060
+            );
+        }
+        &--picture {
+            height: 64px;
+            width: 64px;
+            border-radius: 90px;
+        }
+    }
+}
+
+.logement-collapse {
+    margin: 24px 0 50px;
+    @include grid-display(
+        $column: 2,
+        $gap: 0 76px
+    );
+}

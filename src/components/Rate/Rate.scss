@@ -1,0 +1,14 @@
+.rate {
+  display: flex;
+  gap: 6px;
+}
+
+.star {
+  font-size: 24px;
+  color: lightgray; /* Default star color */
+  transition: color 0.2s ease;
+}
+
+.star.filled {
+  color: #FF6060;
+}

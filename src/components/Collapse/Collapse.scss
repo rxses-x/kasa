@@ -1,0 +1,41 @@
+/* Collapse */
+
+.collapse {
+    // margin-bottom: 10px;
+    &__button {
+        @include flex-display(
+            $flex-direction: row,
+            $align-items: baseline
+        );
+        background: #FF6060;
+        padding: 10px;
+        border-radius: 5px;
+        @include text-style(
+            $font-size: 24px,
+            $font-weight: 700,
+            $line-height: 34.22px,
+            $text-align: left
+        );
+    }
+    &__icon {
+        margin-left: 8px;
+    }
+    &__content {
+        @include flex-display(
+            $align-items: flex-start
+        );
+        animation: fadeIn 0.3s ease-in-out;
+        background: #F6F6F6;
+        padding: 20px;
+        margin-bottom: 20px;
+        p {
+            @include text-style(
+                $font-size: 18px,
+                $font-weight: 400,
+                $line-height: 25.67px,
+                $text-align: left,
+                $color: #000000
+            );
+        }
+    }
+}

@@ -1,0 +1,32 @@
+/* Header */
+.header {
+  @include flex-display(
+    $flex-direction: row,
+    $align-items: flex-start
+  );
+  
+  &__logo {
+    img, svg {
+      width: 100px; // Adjust the size
+      height: 68px;
+    }
+  }
+
+  .navigation {
+    a {
+      margin: 0 25px;
+      text-decoration: none;
+      color: black;
+
+      &.active {
+        text-decoration: underline; // Underline for active link
+      }
+        &:last-child {
+          margin-right: 0; // Remove margin for the last link
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
