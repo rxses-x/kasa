@@ -5,8 +5,8 @@
     $align-items: center
   );
   &__logo {
-    color: red;
-    img, svg {
+    fill :#FF6060;
+    svg {
       width: 100px; // Adjust the size
       height: 68px;
     }

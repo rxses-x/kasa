@@ -5,6 +5,10 @@
         position: relative;
         border-radius: 25px;
         overflow: hidden;
+        @include mobile-responsive {
+            height: 255px;
+            border-radius: 10px;
+        }
     }
     &__image {
         width: 100%;
@@ -13,9 +17,13 @@
     &__button {
         position: absolute;
         background-color: transparent;
-        color: white;
+        color: map.get($kasa-variables, "white");
         font-size: 80px;
         top: 40%;
+        @include mobile-responsive {
+            top: 45%;
+            font-size: 20px;
+        }
         &--left {
             left: 10px;
         }
@@ -31,6 +39,9 @@
                 $font-weight: 500,
                 $line-height: 25.67px
             );
+            @include mobile-responsive {
+                display: none;
+            }
         }
     }
 }

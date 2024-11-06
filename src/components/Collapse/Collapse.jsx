@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Collapse = ({ title, children, className }) => {
+const Collapse = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleCollapse = () => {
@@ -15,7 +15,7 @@ const Collapse = ({ title, children, className }) => {
             </button>
             {isOpen && (
                 <div className="collapse__content">
-                {children}
+                    {children}
                 </div>
             )}
         </div>

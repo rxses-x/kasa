@@ -1,10 +1,10 @@
 import React from 'react';
-import logo from '../../assets/logo.svg';
+import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <img src={logo} alt="Kasa Logo" className='footer__logo' />
+      <Logo className='footer__logo'/>
       <p>© 2020 Kasa. All rights reserved</p>
     </footer>
   );

@@ -14,7 +14,12 @@
         $font-weight: 700,
         $line-height: 19.96px
     );
-    background: #FF6060;
+    @include mobile-responsive {
+        font-size: 10px;
+        line-height: 14.26px;
+
+    }
+    background: map.get($kasa-variables, "red");
     border-radius: 10px;
     padding: 3px 40px;
 }

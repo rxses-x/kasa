@@ -8,8 +8,6 @@ import Collapse from '../../components/Collapse/Collapse';
 const Logement = () => {
     const { id } = useParams();
     const rental = rentalList.find((i) => i.id === id)
-    
-    console.log('rental', rental)
 
     if (!rental) {
         return <Navigate to='*' />
@@ -21,8 +19,8 @@ const Logement = () => {
                 images = { rental.pictures }
             />
             <div className='logement-content'>
-                <h1 className='logement-content__title'>{rental.title}</h1>
-                <p className='logement-content__location'>{rental.location}</p>
+                <h1 className='logement-content__title'>{ rental.title }</h1>
+                <p className='logement-content__location'>{ rental.location }</p>
             </div>
             <Tags
                 tag = { rental.tags }
@@ -41,14 +39,15 @@ const Logement = () => {
             </div>
             <div className='logement-collapse'>
                 <Collapse
-                    title = 'Description'>
+                    title = 'Description'
+                >
                     <p>{ rental.description }</p>
                 </Collapse>
                 <Collapse
                     title = 'Équipements'>
-                    {rental.equipments.map(item => (
-                        <p>{ item }</p>
-                    ))}
+                    { rental.equipments.map((item, index) => (
+                        <p key={ index }>{ item }</p>
+                    )) }
                 </Collapse>
             </div>
         </section>

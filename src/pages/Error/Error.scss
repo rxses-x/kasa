@@ -7,7 +7,7 @@
       $font-size: 288px,
       $font-weight: 700,
       $line-height: 410.69px,
-      $color: #FF6060
+      $color: map.get($kasa-variables, "red")
     );
   }
   p {
@@ -16,7 +16,7 @@
       $font-size: 36px,
       $font-weight: 500,
       $line-height: 51.34px,
-      $color: #FF6060
+      $color: map.get($kasa-variables, "red")
     );
   }
   &__link {

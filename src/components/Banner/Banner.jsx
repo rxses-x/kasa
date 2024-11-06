@@ -1,4 +1,4 @@
-function Banner({title, image}) {
+const Banner = ({title, image}) => {
     return (
         <main className="banner-content">
             <img src={image} alt="" className="banner-content__image"></img>

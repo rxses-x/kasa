@@ -1,18 +1,16 @@
 /* Footer */
 
 .footer {
-  background-color: black;
-  color: white;
+  background-color: map.get($kasa-variables, "black");
+  color: map.get($kasa-variables, "white");
   text-align: center;
   padding: 0;
   padding: 66px 0 0 0;
   @include mobile-responsive {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    @include flex-display()
   }
   &__logo {
-    background: pink;
+    fill: white;
     width: 122px;
     height: 39.44px;
   }
@@ -23,5 +21,10 @@
       $font-weight: 500,
       $line-height: 34.22px
     );
+    @include mobile-responsive {
+      width: 133.59px;
+      font-size: 12px;
+      line-height: 17.11px;
+    }
   }
 }

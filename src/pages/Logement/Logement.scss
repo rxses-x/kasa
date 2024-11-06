@@ -10,8 +10,12 @@
             $font-weight: 500,
             $line-height: 51.34px,
             $text-align: left,
-            $color: #FF6060
+            $color: map.get($kasa-variables, "red")
         );
+        @include mobile-responsive {
+            font-size: 18px;
+            line-height: 25.67px;
+        }
     }
     &__location {
         @include text-style(
@@ -21,23 +25,42 @@
             $text-align: left,
             $color:#000000
         );
+        @include mobile-responsive {
+            font-size: 14px;
+            line-height: 19.96px;
+        }
     }
 }
 
 .logement-info {
     position: absolute;
-    left: -125px;
-    top: 62%;
+    right: 100px;
+    margin-top: -125px;
     @include flex-display(
         $align-items: flex-end,
         $gap: 15px
     );
+    @include mobile-responsive {
+        flex-direction: row-reverse;
+        justify-content: center;
+        right: 0;
+        margin: 24px 0;
+        gap: 80px;
+        // margin-top: -125px;
+    }
     &__identity {
         @include flex-display(
             $flex-direction: row,
             $justify-content: flex-end,
             $width: unset
         );
+        @include mobile-responsive {
+            @include flex-display(
+                $flex-direction: row,
+                $justify-content: flex-end,
+                $width: unset
+            );
+        }
         &--name {
             width: 100px;
             padding-right: 10px;
@@ -46,13 +69,21 @@
                 $font-weight: 500,
                 $line-height: 25.67px,
                 $text-align: right,
-                $color: #FF6060
+                $color: map.get($kasa-variables, "red")
             );
+            @include mobile-responsive {
+                font-size: 12px;
+                line-height: 17.11px;
+            }
         }
         &--picture {
             height: 64px;
             width: 64px;
             border-radius: 90px;
+            @include mobile-responsive {
+                height: 32px;
+                width: 32px;
+            }
         }
     }
 }
@@ -63,4 +94,11 @@
         $column: 2,
         $gap: 0 76px
     );
+    @include mobile-responsive {
+        margin: 73px 0 0;
+        @include grid-display(
+            $column: 1,
+            $gap: 20px 0
+        );
+    }
 }

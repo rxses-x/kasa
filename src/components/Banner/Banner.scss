@@ -8,7 +8,6 @@
     @include mobile-responsive {
       height: 111px;
       border-radius: 10px;
-      margin-bottom: 22px;
     }
     border-radius: 25px;
     box-shadow: 0px 4px 4px 0px #00000040;
@@ -32,11 +31,13 @@
     &__title {
       position: absolute;
       @include mobile-responsive {
-        white-space: wrap; /* Prevent text from wrapping */
+        margin-left: 16px;
+        white-space: normal; /* Prevent text from wrapping */
         @include text-style(
           $font-size: 24px,
           $font-weight: 700,
-          $line-height: 24px
+          $line-height: 24px,
+          $text-align: left
         );
       }
       @include text-style(

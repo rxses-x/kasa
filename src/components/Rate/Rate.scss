@@ -5,10 +5,12 @@
 
 .star {
   font-size: 24px;
-  color: lightgray; /* Default star color */
-  transition: color 0.2s ease;
+  color: map.get($kasa-variables, "light-gray"); /* Default star color */
+  @include mobile-responsive {
+    font-size: 20px;
+  }
 }
 
 .star.filled {
-  color: #FF6060;
+  color: map.get($kasa-variables, "red");
 }

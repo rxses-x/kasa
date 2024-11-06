@@ -7,7 +7,7 @@
             $flex-direction: row,
             $align-items: baseline
         );
-        background: #FF6060;
+        background: map.get($kasa-variables, "red");
         padding: 10px;
         border-radius: 5px;
         @include text-style(
@@ -16,6 +16,10 @@
             $line-height: 34.22px,
             $text-align: left
         );
+        @include mobile-responsive {
+            font-size: 13px;
+            line-height: 18.54px;
+        }
     }
     &__icon {
         margin-left: 8px;
@@ -34,8 +38,12 @@
                 $font-weight: 400,
                 $line-height: 25.67px,
                 $text-align: left,
-                $color: #000000
+                $color: map.get($kasa-variables, "black")
             );
+            @include mobile-responsive {
+                font-size: 12px;
+                line-height: 17.11px;
+            }
         }
     }
 }

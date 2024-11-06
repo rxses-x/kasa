@@ -31,6 +31,7 @@
     $text-align: center,
     $color: map.get($kasa-variables, "white")
     ) {
+    font-family: 'Montserrat', sans-serif;
     font-size: $font-size;
     font-style: $font-style;
     font-weight: $font-weight;
@@ -40,19 +41,19 @@
 }
 
 @mixin mobile-responsive {
-    @media all and (max-width: map.get($kasa-variables, "mobile")) {
+    @media screen and (max-width: map.get($kasa-variables, "mobile")) {
         @content
     }
 }
 
 @mixin tablet-responsive {
-    @media screen and (min-width: map.get($kasa-variables, "tablet")) {
+    @media screen and (max-width: map.get($kasa-variables, "tablet")) {
         @content
     }
 }
 
 @mixin laptop-responsive {
-    @media screen and (min-width: map.get($kasa-variables, "laptop")) {
+    @media screen and (max-width: map.get($kasa-variables, "laptop")) {
         @content
     }
 }
