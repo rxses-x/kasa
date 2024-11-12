@@ -41,19 +41,19 @@
 }
 
 @mixin mobile-responsive {
-    @media screen and (max-width: map.get($kasa-variables, "mobile")) {
+    @media (max-width: map.get($kasa-variables, "mobile")) {
         @content
     }
 }
 
 @mixin tablet-responsive {
-    @media screen and (max-width: map.get($kasa-variables, "tablet")) {
+    @media (max-width: map.get($kasa-variables, "tablet")) {
         @content
     }
 }
 
 @mixin laptop-responsive {
-    @media screen and (max-width: map.get($kasa-variables, "laptop")) {
+    @media (max-width: map.get($kasa-variables, "laptop")) {
         @content
     }
 }

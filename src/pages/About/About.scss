@@ -10,4 +10,11 @@
     $align-items: stretch,
     $gap: 28px
   );
+  @include laptop-responsive {
+    padding: 28px 0;
+}
+  @include mobile-responsive {
+    padding: 20px 0;
+    gap: 20px
+  }
 }

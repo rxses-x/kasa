@@ -17,7 +17,12 @@
     @include mobile-responsive {
         font-size: 10px;
         line-height: 14.26px;
+        padding: 3px 29px;
 
+    }
+    @include laptop-responsive {
+        font-size: 12px;
+        padding: 3px 20px;
     }
     background: map.get($kasa-variables, "red");
     border-radius: 10px;

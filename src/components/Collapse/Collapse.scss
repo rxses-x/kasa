@@ -20,6 +20,10 @@
             font-size: 13px;
             line-height: 18.54px;
         }
+        @include laptop-responsive {
+            padding: 5px 10px;
+            font-size: 14px;
+        }
     }
     &__icon {
         margin-left: 8px;
@@ -43,6 +47,9 @@
             @include mobile-responsive {
                 font-size: 12px;
                 line-height: 17.11px;
+            }
+            @include laptop-responsive {
+                font-size: 14px;
             }
         }
     }

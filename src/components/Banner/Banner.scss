@@ -30,6 +30,9 @@
     }
     &__title {
       position: absolute;
+      @include laptop-responsive {
+        font-size: 38px
+    }
       @include mobile-responsive {
         margin-left: 16px;
         white-space: normal; /* Prevent text from wrapping */

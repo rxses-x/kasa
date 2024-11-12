@@ -6,17 +6,40 @@
   );
   &__logo {
     fill :#FF6060;
-    svg {
-      width: 100px; // Adjust the size
-      height: 68px;
+    width: auto;
+    height: 62.26px;
+    @include mobile-responsive {
+      width: auto;
+      height: 55px;
     }
   }
 
   .navigation {
+    @include text-style(
+      $font-size: 24px,
+      $font-weight: 500,
+      $line-height: 34.22px,
+      $text-align: right
+    );
+    @include mobile-responsive {
+      text-transform: uppercase; // Forces uppercase text
+      @include flex-display(
+        $flex-direction: row,
+        $justify-content: end
+      );
+      font-size: 12px;
+      line-height: 17.11px;
+    }
     a {
       margin: 0 25px;
       text-decoration: none;
       color: black;
+      white-space: nowrap; // Prevent wrapping
+
+      @include mobile-responsive {
+        margin-right: -11px;
+        margin-left: 25px;
+      }
 
       &.active {
         text-decoration: underline; // Underline for active link

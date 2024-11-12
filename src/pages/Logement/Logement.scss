@@ -12,6 +12,9 @@
             $text-align: left,
             $color: map.get($kasa-variables, "red")
         );
+        @include laptop-responsive {
+            font-size: 24px;
+        }
         @include mobile-responsive {
             font-size: 18px;
             line-height: 25.67px;
@@ -25,6 +28,9 @@
             $text-align: left,
             $color:#000000
         );
+        @include laptop-responsive {
+            font-size: 16px;
+        }
         @include mobile-responsive {
             font-size: 14px;
             line-height: 19.96px;
@@ -40,13 +46,15 @@
         $align-items: flex-end,
         $gap: 15px
     );
+    @include laptop-responsive {
+        right: 24px;
+    }
     @include mobile-responsive {
+        padding: inherit;
         flex-direction: row-reverse;
-        justify-content: center;
+        justify-content: space-between;
         right: 0;
         margin: 24px 0;
-        gap: 80px;
-        // margin-top: -125px;
     }
     &__identity {
         @include flex-display(

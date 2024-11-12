@@ -9,11 +9,23 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  margin: auto;
+  height: 100vh;
 }
 
 footer {
   margin: 0;
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 h1, h2, p {
@@ -43,5 +55,11 @@ img {
     > *:not(.footer) {
       padding: 20px;
     }
+  }
+
+  @include laptop-responsive {
+    > *:not(.footer) {
+      padding: 25px;
+    } 
   }
 }
