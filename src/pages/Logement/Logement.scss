@@ -54,7 +54,7 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         right: 0;
-        margin: 24px 0;
+        margin: -5px 0
     }
     &__identity {
         @include flex-display(
