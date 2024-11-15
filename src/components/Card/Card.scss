@@ -2,65 +2,94 @@
 
 .card-grid {
     // padding: 45px 100px 0;
-    @include grid-display(
-        $gap: 50px 60px,
-        $column: 3
-    );
+    @include grid-display($gap: 50px 60px,
+        $column: 3);
+
     @include laptop-responsive {
         padding: 30px;
         grid-gap: 30px 30px;
     }
+
     @include mobile-responsive {
         background: transparent;
-        @include grid-display(
-            $gap: 20px,
-            $column: 1
-        );
+        @include grid-display($gap: 20px,
+            $column: 1);
         padding: 0px;
         margin: 20px 0;
     }
+
     background: map.get($kasa-variables, 'background-gray');
     padding: 56px 60px 43px;
-    margin: 43px 0 50px ;
+    margin: 43px 0 50px;
     border-radius: 25px;
+    z-index: 0;
 }
 
-.card {
+.card-content {
+    position: relative;
     width: 100%;
     height: 100%;
     cursor: pointer;
+    overflow: hidden;
+
     @include mobile-responsive {
         height: 255px;
     }
+
+    // Gradient overlay
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(10, 10, 10, 0) 42%,
+            rgba(4, 4, 4, 0.205) 99.99%,
+            rgba(0, 0, 0, 0.5) 100%
+        );
+        z-index: 1;
+    }
+
     &__image {
+        overflow: hidden;
         position: relative;
         height: 100%;
-        @include flex-display(
-            $justify-content: flex-end
-        );
+        @include flex-display($justify-content: flex-end);
         border-radius: 10px;
         object-fit: cover;
     }
+
+
     &__title {
+        z-index: 2; // Ensures the text is above the gradient
         width: 100%;
-        @include text-style(
-            $font-size: 18px,
+        @include text-style($font-size: 18px,
             $font-weight: 700,
             $line-height: 25.67px,
             $text-align: left,
         );
+
         @include mobile-responsive {
             bottom: 28%;
-            white-space: wrap; /* Prevent text from wrapping */
+            white-space: wrap;
+            /* Prevent text from wrapping */
         }
+
         @include tablet-responsive {
             bottom: 26%;
             font-size: 16px;
         }
+
         @include laptop-responsive {
             bottom: 26%;
             font-size: 16px;
         }
+
         position: relative;
         left: 5%;
         bottom: 24%;
