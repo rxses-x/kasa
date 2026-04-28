@@ -71,12 +71,8 @@ npm run build
 
 ## 🌐 Live Demo
 
-Add deployment link here if available.
-
-Example:
-
-```txt
-(https://rxses-x.github.io/kasa/)
+```bash
+*(https://rxses-x.github.io/kasa/)*
 ```
 
 ---
