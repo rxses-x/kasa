@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Kasa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kasa is a responsive real estate rental web application developed with React as part of the OpenClassrooms Web Integrator training program.
 
-## Available Scripts
+The project focuses on modern frontend development practices, reusable React components and responsive user interface design.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Responsive user interface
+- Reusable React components
+- Dynamic rendering
+- State management
+- Clean frontend architecture
+- Modern UI practices
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Create React App
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📚 Skills Developed
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+During this project, I practiced:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React fundamentals
+- Component-based architecture
+- Props and state management
+- Event handling
+- Responsive web design
+- Frontend project organization
+- Git and GitHub workflow
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/rxses-x/project-name.git
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Start the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm start
+```
 
-### Code Splitting
+Build for production:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run build
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🌐 Live Demo
 
-### Making a Progressive Web App
+Add deployment link here if available.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Example:
 
-### Advanced Configuration
+```txt
+(https://rxses-x.github.io/kasa/)
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+<!-- ## 📸 Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Add screenshots of the application here.
 
-### `npm run build` fails to minify
+Examples:
+- Desktop version
+- Mobile responsive version
+- Main interface
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+-->
+
+## 🎓 Academic Context
+
+This project was completed as part of the OpenClassrooms Web Integrator training program.
+
+The objective was to strengthen practical frontend development skills using React and modern web technologies.
