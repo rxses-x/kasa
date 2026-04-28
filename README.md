@@ -75,17 +75,11 @@ npm run build
 
 ---
 
-<!-- ## 📸 Screenshots
+## 📸 Screenshots
 
-Add screenshots of the application here.
-
-Examples:
-- Desktop version
-- Mobile responsive version
-- Main interface
-
----
--->
+![Kasa Homepage](https://github.com/user-attachments/assets/efbeda43-6ff1-416e-b246-82392ea41978)
+![Kasa apartment listing interface](https://github.com/user-attachments/assets/5d7b3270-7e14-4e9a-8315-80604f70647f)
+![Kasa About me](https://github.com/user-attachments/assets/f5cc0896-083c-4652-ac0c-fa9ef8df5b63)
 
 ## 🎓 Academic Context
 
