@@ -71,9 +71,7 @@ npm run build
 
 ## 🌐 Live Demo
 
-```bash
 *(https://rxses-x.github.io/kasa/)*
-```
 
 ---
 
